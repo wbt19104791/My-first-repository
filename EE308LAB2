@@ -86,8 +86,7 @@ void keywords(string s){
 				else iee.push_back("else");
 
 			}
-			if (str == "if")                  
-			{
+			if (str == "if"){
 
 				if (iee.back() != "else")iee.push_back("if");
 			}
