@@ -175,8 +175,7 @@ void output(int Level){
 		cout << "total num: " << keyword_num << endl;
 		cout << "switch num: " << switch_num << endl;
 		cout << "case num: ";
-		for (int i = 1; i <= case_cnt; i++)
-		{
+		for (int i = 1; i <= case_cnt; i++){
 			cout << casenum[i] << " ";
 		}
 		cout << endl;
@@ -186,8 +185,7 @@ void output(int Level){
 		cout << "total num: " << keyword_num << endl;
 		cout << "switch num: " << switch_num << endl;
 		cout << "case num: ";
-		for (int i = 1; i <= case_cnt; i++)
-		{
+		for (int i = 1; i <= case_cnt; i++){
 			cout << casenum[i] << " ";
 		}
 		cout << endl;
