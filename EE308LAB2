@@ -123,39 +123,31 @@ void question3_4(){
 	stack <int> have_elseif;
 	for (int i = 0; i < iee.size(); i++)
 	{
-		if (iee[i] == "{")
-		{
+		if (iee[i] == "{"){
 			s.push("{");
 			have_elseif.push(0);
 		}
-		else if (iee[i] == "}")
-		{
-			while (s.top() != "{")
-			{
+		else if (iee[i] == "}"){
+			while (s.top() != "{"){
 				s.pop();
 			}
 			s.pop();
 			have_elseif.pop();
 		}
-		else if (iee[i] == "if")
-		{
+		else if (iee[i] == "if"){
 			s.push("if");
 			have_elseif.pop();
 			have_elseif.push(0);
 		}
-		else if (iee[i] == "else_if")
-		{
+		else if (iee[i] == "else_if"){
 			have_elseif.pop();
 			have_elseif.push(1);
 		}
-		else if (iee[i] == "else")
-		{
-			if (have_elseif.top())
-			{
+		else if (iee[i] == "else"){
+			if (have_elseif.top()){
 				iee_num++;
 			}
-			else
-			{
+			else{
 				ie_num++;
 			}
 			have_elseif.pop();
