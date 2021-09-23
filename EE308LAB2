@@ -11,8 +11,10 @@ void question1_2(string a[]);
 void question3_4();
 void output(int Level);
 string keyword[32] = {
-	"auto","break","case","char","const","continue","default","double","do","else","enum","extern","float","for","goto","if","int","long",
-	"register","return","short","signed","sizeof","static","struct","switch","typedef","union","unsigned","void","volatile","while" };
+	"auto","break","case","char","const","continue","default","double","do",
+	"else","enum","extern","float","for","goto","if","int","long",
+	"register","return","short","signed","sizeof","static",
+	"struct","switch","typedef","union","unsigned","void","volatile","while" };
 int keyword_num = 0;
 int switch_num = 0;
 int ifelse_num = 0;
@@ -61,16 +63,13 @@ void keywords(string s)
 	const char* p = s.data();  //change string to char *[] 
 	for (int i = 0; i <= n; i++)    //one by one 
 	{
-		if (p[i] == '{')
-		{
+		if (p[i] == '{'){
 			flag = 1;
 		}
-		if (p[i] == '}')
-		{
+		if (p[i] == '}'){
 			flag = 2;
 		}
-		if ((p[i] >= 'a' && p[i] <= 'z' || p[i] >= 'A' && p[i] <= 'Z'))
-		{
+		if ((p[i] >= 'a' && p[i] <= 'z' || p[i] >= 'A' && p[i] <= 'Z')){
 			str += p[i];  
 		}
 		else
