@@ -101,30 +101,24 @@ void keywords(string s){
 
 void question1_2(string a[]){
 	int i, j;
-	for (i = 0; i < cnt1; i++)
-	{
-		for (j = 0; j <= 31; j++)
-		{
-			if (a[i] == keyword[j])
-			{
+	for (i = 0; i < cnt1; i++){
+		for (j = 0; j <= 31; j++){
+			if (a[i] == keyword[j]){
 				keyword_num++;       
 				temp2[cnt2++] = a[i]; 
 			}
 		}
-		if (a[i] == "switch")
-		{
+		if (a[i] == "switch"){
 			switch_num++;
 			case_cnt++;
 		}
-		if (a[i] == "case")
-		{
+		if (a[i] == "case"){
 			casenum[case_cnt]++;
 		}
 	}
 }
 
-void question3_4()
-{
+void question3_4(){
 	stack <string> s;
 	stack <int> have_elseif;
 	for (int i = 0; i < iee.size(); i++)
