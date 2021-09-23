@@ -65,7 +65,7 @@ void keywords(string s){
 		}
 		if ((p[i] >= 'a' && p[i] <= 'z' || p[i] >= 'A' && p[i] <= 'Z')){
 			str += p[i];  
-		}
+		} 
 		else{
 			if (str == ""){
 				if (flag == 1)iee.push_back("{");
