@@ -99,8 +99,7 @@ void keywords(string s){
 	}
 }
 
-void question1_2(string a[])
-{
+void question1_2(string a[]){
 	int i, j;
 	for (i = 0; i < cnt1; i++)
 	{
