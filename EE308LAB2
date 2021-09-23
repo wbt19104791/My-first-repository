@@ -28,22 +28,19 @@ string temp2[400];
 int cnt1 = 0;        
 int cnt2 = 0;        
 vector <string> iee;
-int main()
-{
+int main(){
 	int level;
 	string filename, temp;
 	char buffer[1];
 	cout << "please input file path:";
 	cin >> filename;
 	ifstream fin(filename.c_str());
-	if (!fin)
-	{
+	if (!fin){
 		cout << "File opening failure" << endl;
 	}
 	else
 	{
-		while (getline(fin, temp))
-		{           // Input from disk file, read in line by line, processed line by line
+		while (getline(fin, temp)){           // Input from disk file, read in line by line, processed line by line
 			keywords(temp);
 		}
 		fin.close();    // close   
@@ -55,8 +52,7 @@ int main()
 	output(level);
 }
 
-void keywords(string s)
-{
+void keywords(string s){
 	int n = s.length();
 	string str;
 	int flag = 0;             // Check if non - alphabetic characters are '{' or '}' and mark them
